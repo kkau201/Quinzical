@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1280.0" stylesheets="@../Stylesheet.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="quinzical.setting.SettingsController">
+   <ImageView fitHeight="800.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../resources/img/Settings_BG.png" />
+   </ImageView>
+   <Pane layoutX="244.0" layoutY="222.0" prefHeight="450.0" prefWidth="792.0">
+      <children>
+         <Text id="h2" layoutX="53.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Voice Speed" textAlignment="CENTER" wrappingWidth="686.1600341796875">
+            <font>
+               <Font name="Ubuntu Bold" size="60.0" />
+            </font>
+         </Text>
+         <Text fill="#575757" layoutX="198.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 24;" text="This will adjust how fast the host asks the questions ( default is 5)" textAlignment="CENTER" wrappingWidth="395.3399658203125">
+            <font>
+               <Font name="Ubuntu" size="36.0" />
+            </font>
+         </Text>
+         <Button id="plusBtn" fx:id="plusBtn" alignment="BOTTOM_LEFT" layoutX="198.0" layoutY="215.0" mnemonicParsing="false" onAction="#setPlusBtn" prefHeight="26.0" prefWidth="36.0" textAlignment="CENTER" />
+         <Button id="minusBtn" fx:id="minusBtn" layoutX="539.0" layoutY="215.0" lineSpacing="100.0" mnemonicParsing="false" onAction="#setMinusBtn" prefHeight="80.0" prefWidth="400.0" textAlignment="CENTER" />
+         <TextField id="inputTextField" fx:id="speed" layoutX="277.0" layoutY="193.0" prefHeight="84.0" prefWidth="237.0" promptText="1" style="-fx-font-size: 50; -fx-alignment: center;" />
+         <Button fx:id="testVoiceBtn" layoutX="196.0" layoutY="333.0" mnemonicParsing="false" onAction="#setTestVoiceBtn" text="TEST VOICE" />
+      </children>
+   </Pane>
+   <Button fx:id="backBtn" layoutX="1036.0" layoutY="672.0" mnemonicParsing="false" onAction="#setBackBtn" text="GO BACK" />
+</AnchorPane>

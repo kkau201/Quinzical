@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1280.0" stylesheets="@../Stylesheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quinzical.playModule.StartController">
+   <ImageView fitHeight="800.0" fitWidth="1280.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../resources/img/start_BG.png" />
+   </ImageView>
+   <Pane layoutX="369.0" layoutY="171.0" prefHeight="544.0" prefWidth="542.0">
+      <children>
+         <ImageView fx:id="instructionImage" fitHeight="430.0" fitWidth="640.0" layoutX="-18.0" layoutY="11.0" onDragDetected="#imageClickOn" onKeyPressed="#imageClickOn" onMouseClicked="#imageClickOn" onMouseDragged="#imageClickOn" onMousePressed="#imageClickOn" onSwipeLeft="#imageClickOn" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../resources/img/slide1.png" />
+            </image>
+         </ImageView>
+         <ButtonBar layoutX="156.0" layoutY="495.0" prefHeight="40.0" prefWidth="200.0">
+           <buttons>
+             <Button id="dotBtn" fx:id="one" mnemonicParsing="false" onAction="#setOne" prefHeight="76.0" prefWidth="121.0" />
+               <Button id="dotBtn" fx:id="two" minWidth="35.0" mnemonicParsing="false" onAction="#setTwo" prefHeight="52.0" prefWidth="121.0" />
+               <Button id="dotBtn" fx:id="three" mnemonicParsing="false" onAction="#setThree" prefHeight="76.0" prefWidth="121.0" />
+               <Button id="dotBtn" fx:id="four" mnemonicParsing="false" onAction="#setFour" prefHeight="76.0" prefWidth="121.0" />
+           </buttons>
+         </ButtonBar>
+      </children>
+   </Pane>
+   <Button fx:id="backBtn" layoutX="62.0" layoutY="688.0" lineSpacing="100.0" mnemonicParsing="false" onAction="#setBackBtn" prefHeight="80.0" prefWidth="400.0" text="GO BACK" textAlignment="CENTER" />
+   <Button id="smallBtn" fx:id="startBtn" layoutX="1030.0" layoutY="695.0" mnemonicParsing="false" onAction="#setStartBtn" prefHeight="80.0" prefWidth="318.0" style="-fx-pref-height: 80; -fx-pref-width: 200;" text="START" textAlignment="CENTER" />
+</AnchorPane>

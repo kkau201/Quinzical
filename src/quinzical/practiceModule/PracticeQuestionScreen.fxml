@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1280.0" stylesheets="@../Stylesheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quinzical.practiceModule.PracticeQuestionController">
+   <ImageView fitHeight="800.0" fitWidth="1280.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../resources/img/Practice_Question_BG.png" />
+   </ImageView>
+   <Button id="homeBtn" fx:id="homeIcon" layoutX="61.0" layoutY="29.0" maxHeight="50.0" maxWidth="55.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" onAction="#setHomeIcon" prefWidth="182.0" />
+   <Button id="practiceSubmitBtn" fx:id="submitBtn" alignment="CENTER" layoutX="922.0" layoutY="553.0" lineSpacing="100.0" mnemonicParsing="false" onAction="#setSubmitBtn" prefHeight="59.0" prefWidth="283.0" text="SUBMIT" textAlignment="CENTER" />
+   <TextField id="inputTextField" fx:id="response" onKeyPressed="#setOnKeyPressed" layoutX="382.0" layoutY="550.0" prefHeight="86.0" prefWidth="529.0" promptText="Answer Here" />
+   <Button id="speakerBtn" fx:id="speakerIcon" layoutX="90.0" layoutY="236.0" maxHeight="140.0" maxWidth="140.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" onAction="#speak" prefWidth="150.0" />
+   <Text id="h2" fx:id="questionStarterText" layoutX="14.0" layoutY="609.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold; -fx-font-size: 45;" text="What is" textAlignment="RIGHT" wrappingWidth="331.8800048828125" />
+   <TextArea fx:id="questionText" editable="false" layoutX="273.0" layoutY="155.0" prefHeight="323.0" prefWidth="752.0" style="-fx-font-size: 40;" />
+   <ButtonBar layoutX="398.0" layoutY="689.0" prefHeight="76.0" prefWidth="349.0">
+      <buttons>
+         <Button id="macronBtn" fx:id="macronA" alignment="CENTER" lineSpacing="100.0" maxWidth="69.0" mnemonicParsing="false" onAction="#setMacron" prefHeight="59.0" prefWidth="69.0" style="-fx-max-width: 45;" text="ā" textAlignment="CENTER" />
+         <Button id="macronBtn" fx:id="macronE" alignment="CENTER" lineSpacing="100.0" maxWidth="69.0" mnemonicParsing="false" onAction="#setMacron" prefHeight="59.0" prefWidth="69.0" text="ē" textAlignment="CENTER" />
+         <Button id="macronBtn" fx:id="macronI" alignment="CENTER" lineSpacing="100.0" maxHeight="53.0" maxWidth="54.0" mnemonicParsing="false" onAction="#setMacron" prefHeight="53.0" prefWidth="69.0" text="ī" textAlignment="CENTER" />
+         <Button id="macronBtn" fx:id="macronO" alignment="CENTER" lineSpacing="100.0" maxWidth="69.0" mnemonicParsing="false" onAction="#setMacron" prefHeight="59.0" prefWidth="69.0" text="ō" textAlignment="CENTER" />
+         <Button id="macronBtn" fx:id="macronU" alignment="CENTER" lineSpacing="100.0" maxHeight="53.0" maxWidth="54.0" mnemonicParsing="false" onAction="#setMacron" prefHeight="53.0" prefWidth="69.0" text="ū" textAlignment="CENTER" />
+      </buttons>
+   </ButtonBar>
+   <Text id="p" layoutX="387.0" layoutY="685.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Click on button to insert a macron letter into your answer" />
+   <Text id="incorrectText" fx:id="firstAttemptErrorText" fill="#f76559" layoutX="492.0" layoutY="532.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sorry, incorrect. Please try again." />
+   <Text id="incorrectText" fx:id="secondAttemptErrorText" fill="#f76559" layoutX="469.0" layoutY="532.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sorry, incorrect. Last try, here's a clue!" textAlignment="CENTER" />
+   <ImageView fx:id="attemptCoverOne" fitHeight="50.0" fitWidth="55.0" layoutX="1047.0" layoutY="49.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../resources/img/attempt_cover.png" />
+   </ImageView>
+   <ImageView fx:id="attemptCoverTwo" fitHeight="50.0" fitWidth="49.0" layoutX="1118.0" layoutY="49.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../resources/img/attempt_cover.png" />
+   </ImageView>
+   <Button id="settingBtn" fx:id="settingIcon" layoutX="141.0" layoutY="33.0" maxHeight="50.0" maxWidth="55.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" onAction="#setSettingIcon" prefWidth="182.0" />
+</AnchorPane>

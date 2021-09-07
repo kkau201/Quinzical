@@ -1,0 +1,225 @@
+* {
+    -fx-font-family: Ubuntu;
+}
+
+.button {
+    -fx-background-color: #fee253;
+    -fx-background-radius: 49px;
+    -fx-cursor: hand;
+    -fx-font-size: 40px;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+    -fx-pref-width: 400px;
+    -fx-pref-height: 80px;
+    -fx-spacing: 150px;
+}
+
+.button:hover {
+    -fx-background-color: #ffe779;
+    -fx-font-size: 43px;
+}
+
+#quit {
+    -fx-border-color: #ffe779;
+    -fx-border-width: 7;
+    -fx-border-radius: 49px;
+    -fx-pref-height: 76px;
+    -fx-max-height: 76px;
+    -fx-font-size: 37px;
+    -fx-background-color: white;
+    -fx-text-fill: black;
+}
+
+#quit:hover {
+    -fx-border-color: #fc6b94;
+    -fx-font-size: 40px;
+}
+
+#completedBtn {
+    -fx-background-color: #ebebeb;
+}
+#completedBtn .text {
+    -fx-strikethrough: true;
+}
+
+#smallBtn {
+    -fx-font-size: 30px;
+    -fx-pref-width: 300px;
+    -fx-pref-height: 60px;
+}
+
+#h1 {
+     -fx-font-size: 100px;
+     -fx-font-weight: bold;
+ }
+
+#h2 {
+    -fx-font-size: 60px;
+}
+
+#p {
+    -fx-font-size: 40px;
+}
+
+#money {
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+}
+
+#backBtn{
+    -fx-background-color: #536cca;
+    -fx-font-size: 30px;
+    -fx-text-fill: white;
+    -fx-pref-width: 200px;
+}
+#backBtn:hover{
+    -fx-background-color: #7a8cd0;
+}
+
+#homeBtn {
+    -fx-background-image: url("resources/img/home.png");
+    -fx-background-color: transparent;
+    -fx-pref-width: 55;
+    -fx-pref-height: 50;
+}
+#settingBtn {
+    -fx-background-image: url("resources/img/settings.png");
+    -fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+    -fx-pref-width: 50;
+    -fx-pref-height: 50;
+}
+
+#dotBtn {
+    -fx-background-image: url("resources/img/dot.png");
+    -fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+    -fx-pref-width: 20;
+    -fx-min-width: 20;
+    -fx-pref-height: 20;
+    -fx-min-height: 40;
+}
+
+#speakerBtn {
+    -fx-background-image: url("resources/img/speaker.png");
+    -fx-background-size: 130px;
+    -fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+    -fx-pref-width: 180;
+    -fx-pref-height: 180;
+    -fx-background-position: center;
+}
+
+#speakerBtn:hover{
+    -fx-pref-width: 250;
+    -fx-pref-height: 250;
+    -fx-background-size: 140px;
+}
+
+#dontKnowBtn {
+    -fx-background-color: white;
+    -fx-border-radius: 49px;
+    -fx-border-width: 5px;
+    -fx-border-color: #fee253;
+    -fx-font-size: 40px;
+    -fx-pref-width: 400px;
+    -fx-spacing: 150px;
+}
+#dontKnowBtn:hover {
+    -fx-background-color: #fee253;
+    -fx-background-radius: 49px;
+    -fx-border-radius: 49px;
+    -fx-border-width: 5px;
+    -fx-border-color: #fee253;
+}
+
+#macronBtn {
+    -fx-background-color: white;
+    -fx-border-radius: 49px;
+    -fx-border-width: 5px;
+    -fx-border-color: #fee253;
+    -fx-max-width: 55px;
+    -fx-max-height: 55px;
+    -fx-font-size: 24px;
+    -fx-pref-width: 400px;
+    -fx-spacing: 150px;
+}
+#macronBtn:hover {
+    -fx-background-color: #fee253;
+    -fx-border-color: #fee253;
+}
+
+#inputTextField {
+    -fx-font-size: 30px;
+    -fx-background-color: #ebebeb;
+    -fx-background-radius: 49;
+}
+
+#practiceSubmitBtn {
+    -fx-pref-width: 250px;
+    -fx-pref-height: 80px;
+}
+
+.text-area {
+    -fx-font-size: 49;
+    -fx-font-weight: bold;
+    -fx-prompt-text-fill: black;
+    -fx-display-caret:false;
+    -fx-cursor: default;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.text-area *.text {
+    -fx-text-alignment: center;
+    -fx-cursor: default;
+}
+
+.text-area .content {
+    -fx-cursor: default;
+}
+
+.text-area .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-pane .content{
+    -fx-background-color: transparent;
+}
+
+#incorrectText {
+    -fx-text-fill: #f76559;
+    -fx-font-size: 20px;
+}
+
+#plusBtn {
+    -fx-background-image: url("resources/img/plus_icon_blue.png");
+    -fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+    -fx-pref-width: 50;
+    -fx-pref-height: 50;
+    -fx-background-size: 50;
+}
+
+#minusBtn {
+    -fx-background-image: url("resources/img/minus_icon_blue.png");
+    -fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+    -fx-pref-width: 50;
+    -fx-pref-height: 50;
+    -fx-background-size: 50;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: white;
+    -fx-background-radius: 5em;
+}
